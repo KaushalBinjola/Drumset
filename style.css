@@ -3,7 +3,7 @@ body {
     background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
     display: grid;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     padding:0;
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
@@ -36,8 +36,9 @@ h4{
 .keys{
     justify-self: center;
     display: grid;
-    grid-template-columns: repeat(9,200px);
-    width:95vw;
+    grid-template-columns: repeat(9,170px);
+    grid-column-gap: 10px;
+    width:90vw;
     justify-content: center;
 }
 
@@ -52,7 +53,7 @@ h4{
 }
 .key {
     height:50px;
-    width: 150px;
+    width: 140px;
     font-size: larger;
     padding-top: 20px;
     text-align: center;
@@ -62,13 +63,12 @@ h4{
     color: white;
     box-shadow: 0 0 10px #eee;
     border-radius: 10px;
-    display: block;
 }
 
 .play {
     transform: scale(1.1);
     background-position: right center; 
     color: #fff;
-    text-decoration: none;
+    font-weight: bolder;
     box-shadow: 0 0 10px black;
 }
